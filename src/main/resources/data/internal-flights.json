@@ -1,0 +1,261 @@
+{
+  "source": "internal-flights — Lufthansa Group",
+  "generatedAt": "2026-07-21T14:38:12+02:00",
+  "searches": [
+    {
+      "searchId": "int-cgn-ber",
+      "query": {
+        "origin": "CGN",
+        "destination": "BER",
+        "earliestDeparture": "2026-07-21T15:00:00+02:00"
+      },
+      "offers": [
+        {
+          "offerId": "INT-1",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "CGN",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-21T19:40:00+02:00",
+          "arrival": "2026-07-21T22:40:00+02:00",
+          "availableSeats": 44,
+          "pricePerSeat": {
+            "amount": 214.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 1975",
+              "from": "CGN",
+              "to": "FRA"
+            },
+            {
+              "flightNumber": "LH 186",
+              "from": "FRA",
+              "to": "BER"
+            }
+          ]
+        },
+        {
+          "offerId": "INT-2",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "CGN",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-21T20:10:00+02:00",
+          "arrival": "2026-07-21T23:10:00+02:00",
+          "availableSeats": 21,
+          "pricePerSeat": {
+            "amount": 189.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 1991",
+              "from": "CGN",
+              "to": "MUC"
+            },
+            {
+              "flightNumber": "LH 2046",
+              "from": "MUC",
+              "to": "BER"
+            }
+          ]
+        },
+        {
+          "offerId": "INT-3",
+          "carrier": "Eurowings",
+          "carrierCode": "EW",
+          "departureAirport": "CGN",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-22T07:15:00+02:00",
+          "arrival": "2026-07-22T08:25:00+02:00",
+          "availableSeats": 74,
+          "pricePerSeat": {
+            "amount": 129.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "EW 4718",
+              "from": "CGN",
+              "to": "BER"
+            }
+          ]
+        },
+        {
+          "offerId": "INT-4",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "CGN",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-22T09:25:00+02:00",
+          "arrival": "2026-07-22T13:35:00+02:00",
+          "availableSeats": 52,
+          "pricePerSeat": {
+            "amount": 244.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 6440",
+              "from": "CGN",
+              "to": "VIE"
+            },
+            {
+              "flightNumber": "LH 6351",
+              "from": "VIE",
+              "to": "BER"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "searchId": "int-cgn-dxb",
+      "query": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "earliestDeparture": "2026-07-21T15:00:00+02:00"
+      },
+      "offers": [
+        {
+          "offerId": "INT-5",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "CGN",
+          "arrivalAirport": "DXB",
+          "departure": "2026-07-21T19:40:00+02:00",
+          "arrival": "2026-07-22T06:10:00+04:00",
+          "availableSeats": 20,
+          "pricePerSeat": {
+            "amount": 486.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 1975",
+              "from": "CGN",
+              "to": "FRA"
+            },
+            {
+              "flightNumber": "LH 630",
+              "from": "FRA",
+              "to": "DXB"
+            }
+          ]
+        },
+        {
+          "offerId": "INT-6",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "CGN",
+          "arrivalAirport": "DXB",
+          "departure": "2026-07-21T20:10:00+02:00",
+          "arrival": "2026-07-22T23:20:00+04:00",
+          "availableSeats": 33,
+          "pricePerSeat": {
+            "amount": 421.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 1991",
+              "from": "CGN",
+              "to": "MUC"
+            },
+            {
+              "flightNumber": "LH 638",
+              "from": "MUC",
+              "to": "DXB"
+            }
+          ],
+          "note": "overnight in MUC, connection departs 2026-07-22T14:55"
+        },
+        {
+          "offerId": "INT-7",
+          "carrier": "Swiss",
+          "carrierCode": "LX",
+          "departureAirport": "CGN",
+          "arrivalAirport": "DXB",
+          "departure": "2026-07-22T09:40:00+02:00",
+          "arrival": "2026-07-22T22:05:00+04:00",
+          "availableSeats": 9,
+          "pricePerSeat": {
+            "amount": 512.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LX 1075",
+              "from": "CGN",
+              "to": "ZRH"
+            },
+            {
+              "flightNumber": "LX 242",
+              "from": "ZRH",
+              "to": "DXB"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "searchId": "int-pmi-ber",
+      "query": {
+        "origin": "PMI",
+        "destination": "BER",
+        "earliestDeparture": "2026-07-21T15:00:00+02:00"
+      },
+      "offers": [
+        {
+          "offerId": "INT-8",
+          "carrier": "Eurowings",
+          "carrierCode": "EW",
+          "departureAirport": "PMI",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-21T20:30:00+02:00",
+          "arrival": "2026-07-21T23:05:00+02:00",
+          "availableSeats": 26,
+          "pricePerSeat": {
+            "amount": 179.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "EW 4839",
+              "from": "PMI",
+              "to": "BER"
+            }
+          ]
+        },
+        {
+          "offerId": "INT-9",
+          "carrier": "Lufthansa",
+          "carrierCode": "LH",
+          "departureAirport": "PMI",
+          "arrivalAirport": "BER",
+          "departure": "2026-07-22T06:55:00+02:00",
+          "arrival": "2026-07-22T11:20:00+02:00",
+          "availableSeats": 40,
+          "pricePerSeat": {
+            "amount": 232.0,
+            "currency": "EUR"
+          },
+          "legs": [
+            {
+              "flightNumber": "LH 1155",
+              "from": "PMI",
+              "to": "FRA"
+            },
+            {
+              "flightNumber": "LH 190",
+              "from": "FRA",
+              "to": "BER"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

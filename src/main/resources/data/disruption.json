@@ -1,0 +1,1072 @@
+{
+  "disruption": {
+    "flight": "EW 4711",
+    "origin": "CGN",
+    "destination": "BER",
+    "scheduledDeparture": "2026-07-21T18:35:00+02:00",
+    "scheduledArrival": "2026-07-21T19:45:00+02:00",
+    "status": "CANCELLED",
+    "reason": "technical",
+    "cancelledAt": "2026-07-21T14:20:00+02:00",
+    "affectedBookings": 48,
+    "affectedPassengers": 120
+  },
+  "bookings": [
+    {
+      "bookingRef": "D3HRVC",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "QLCOCS",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "AL0SAU",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "PER8MN",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "AJWFFO",
+      "passengers": 4,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "R94TM2",
+      "passengers": 4,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "LPXKFE",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "VSAB7W",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "F157O4",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "G8CZ3W",
+      "passengers": 1,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "U245X8",
+      "passengers": 2,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "LUN241",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "KHTLPM",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "HEQZ1S",
+      "passengers": 2,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "YJ6SI5",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "YH8JER",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "A14EM1",
+      "passengers": 4,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "KXMLSH",
+      "passengers": 1,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "N4U8QL",
+      "passengers": 1,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "J20MWF",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "NSW1TL",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "Y9CFUF",
+      "passengers": 3,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "ZVUOWN",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "FUTD4C",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "ZC1Q77",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "W3AJB0",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "S5CDBA",
+      "passengers": 4,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "X8IFE8",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "X1UJ9G",
+      "passengers": 2,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "L5EYKY",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "HLM9LJ",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "NFKZTZ",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "KZ2SK8",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "H0DH7X",
+      "passengers": 3,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "M0QHGY",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "DP5SYK",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "PZ5OLD",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "Z3RISV",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "SN9F61",
+      "passengers": 3,
+      "journey": {
+        "origin": "PMI",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 9585",
+            "from": "PMI",
+            "to": "CGN",
+            "departure": "2026-07-21T15:05:00+02:00",
+            "arrival": "2026-07-21T17:20:00+02:00",
+            "status": "NOT_DEPARTED"
+          },
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "EWNY48",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "THOTV2",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "PKAEGI",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "HYIPYW",
+      "passengers": 2,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "WI382E",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "KYJ3Z0",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "K47DWM",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "VEXNFY",
+      "passengers": 1,
+      "journey": {
+        "origin": "CGN",
+        "destination": "DXB",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          },
+          {
+            "flight": "EW 2590",
+            "from": "BER",
+            "to": "DXB",
+            "departure": "2026-07-21T21:40:00+02:00",
+            "arrival": "2026-07-22T06:20:00+04:00",
+            "status": "WILL_BE_MISSED"
+          }
+        ]
+      }
+    },
+    {
+      "bookingRef": "HD08OT",
+      "passengers": 3,
+      "journey": {
+        "origin": "CGN",
+        "destination": "BER",
+        "segments": [
+          {
+            "flight": "EW 4711",
+            "from": "CGN",
+            "to": "BER",
+            "departure": "2026-07-21T18:35:00+02:00",
+            "arrival": "2026-07-21T19:45:00+02:00",
+            "status": "CANCELLED"
+          }
+        ]
+      }
+    }
+  ]
+}

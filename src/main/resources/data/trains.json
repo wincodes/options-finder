@@ -1,0 +1,67 @@
+{
+  "provider": "RailLink Europe",
+  "queries": [
+    {
+      "fromCity": "Cologne",
+      "fromAirport": "CGN",
+      "toCity": "Berlin",
+      "toAirport": "BER",
+      "notBefore": "2026-07-21T15:00",
+      "connections": [
+        {
+          "id": "TRN-1",
+          "operator": "RheinSpree Express",
+          "operatorCode": "RX",
+          "trainNumber": "RX 1024",
+          "departureStation": "Köln Hbf",
+          "arrivalStation": "Berlin Hbf",
+          "departure": "2026-07-21T19:55",
+          "arrival": "2026-07-22T00:18",
+          "availableSeats": 110,
+          "price": "89.90 EUR"
+        },
+        {
+          "id": "TRN-2",
+          "operator": "RheinSpree Express",
+          "operatorCode": "RX",
+          "trainNumber": "RX 1188",
+          "departureStation": "Köln Hbf",
+          "arrivalStation": "Berlin Hbf",
+          "departure": "2026-07-21T20:55",
+          "arrival": "2026-07-22T01:32",
+          "availableSeats": 95,
+          "price": "79.90 EUR",
+          "via": "change in Hannover Hbf"
+        },
+        {
+          "id": "TRN-3",
+          "operator": "RheinSpree Express",
+          "operatorCode": "RX",
+          "trainNumber": "RX 1002",
+          "departureStation": "Köln Hbf",
+          "arrivalStation": "Berlin Hbf",
+          "departure": "2026-07-22T05:48",
+          "arrival": "2026-07-22T10:05",
+          "availableSeats": 242,
+          "price": "69.90 EUR"
+        }
+      ]
+    },
+    {
+      "fromCity": "Cologne",
+      "fromAirport": "CGN",
+      "toCity": "Dubai",
+      "toAirport": "DXB",
+      "notBefore": "2026-07-21T15:00",
+      "connections": []
+    },
+    {
+      "fromCity": "Palma de Mallorca",
+      "fromAirport": "PMI",
+      "toCity": "Berlin",
+      "toAirport": "BER",
+      "notBefore": "2026-07-21T15:00",
+      "connections": []
+    }
+  ]
+}

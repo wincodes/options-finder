@@ -1,0 +1,131 @@
+{
+  "source": "external_flights",
+  "generated_at": 1784637492,
+  "results": [
+    {
+      "offer_id": "EXT-1",
+      "airline_name": "Nimbus Airways",
+      "dep_airport": "CGN",
+      "arr_airport": "BER",
+      "dep_time": "2026-07-21 20:40",
+      "arr_time": "2026-07-21 21:50",
+      "availability": 24,
+      "price_cents": 18900,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "NB88",
+          "from": "CGN",
+          "to": "BER"
+        }
+      ]
+    },
+    {
+      "offer_id": "EXT-2",
+      "airline_name": "Borealis Air",
+      "dep_airport": "DUS",
+      "arr_airport": "BER",
+      "dep_time": "2026-07-21 21:15",
+      "arr_time": "2026-07-21 22:20",
+      "availability": 41,
+      "price_cents": 16400,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "BX217",
+          "from": "DUS",
+          "to": "BER"
+        }
+      ],
+      "note": "departure from nearby airport DUS"
+    },
+    {
+      "offer_id": "EXT-3",
+      "airline_name": "Meridian Air",
+      "dep_airport": "CGN",
+      "arr_airport": "DXB",
+      "dep_time": "2026-07-21 19:55",
+      "arr_time": "2026-07-22 06:05",
+      "availability": 9,
+      "price_cents": 42400,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "MD442",
+          "from": "CGN",
+          "to": "VIE"
+        },
+        {
+          "flight_no": "MD86",
+          "from": "VIE",
+          "to": "DXB"
+        }
+      ]
+    },
+    {
+      "offer_id": "EXT-4",
+      "airline_name": "Zephyr Jet",
+      "dep_airport": "CGN",
+      "arr_airport": "DXB",
+      "dep_time": "2026-07-21 21:05",
+      "arr_time": "2026-07-22 12:40",
+      "availability": 26,
+      "price_cents": 28800,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "ZJ4102",
+          "from": "CGN",
+          "to": "ATH"
+        },
+        {
+          "flight_no": "ZJ660",
+          "from": "ATH",
+          "to": "DXB"
+        }
+      ],
+      "note": "overnight layover in ATH, no hotel included"
+    },
+    {
+      "offer_id": "EXT-5",
+      "airline_name": "Nimbus Airways",
+      "dep_airport": "PMI",
+      "arr_airport": "BER",
+      "dep_time": "2026-07-21 21:10",
+      "arr_time": "2026-07-21 23:55",
+      "availability": 8,
+      "price_cents": 20900,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "NB512",
+          "from": "PMI",
+          "to": "BER"
+        }
+      ]
+    },
+    {
+      "offer_id": "EXT-6",
+      "airline_name": "Borealis Air",
+      "dep_airport": "PMI",
+      "arr_airport": "BER",
+      "dep_time": "2026-07-21 19:45",
+      "arr_time": "2026-07-22 00:10",
+      "availability": 31,
+      "price_cents": 24700,
+      "currency": "EUR",
+      "legs": [
+        {
+          "flight_no": "BX771",
+          "from": "PMI",
+          "to": "HAM"
+        },
+        {
+          "flight_no": "BX28",
+          "from": "HAM",
+          "to": "BER"
+        }
+      ]
+    }
+  ]
+}

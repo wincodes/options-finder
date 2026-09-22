@@ -1,5 +1,6 @@
 package com.wincodes.optionsfinder.sources;
 
+import com.wincodes.optionsfinder.config.MockSourceBehaviorProperties;
 import com.wincodes.optionsfinder.dtos.internal.InternalFlightResponse;
 import com.wincodes.optionsfinder.models.*;
 import tools.jackson.databind.ObjectMapper;
@@ -17,13 +18,19 @@ public class InternalFlightSource implements OptionSource {
 
     private final ObjectMapper objectMapper;
     private final ExecutorService executor;
+    private final MockSourceBehaviorProperties behaviorProperties;
+    private final MockSourceBehaviorApplier behaviorApplier;
 
     public InternalFlightSource(
             ObjectMapper objectMapper,
-            ExecutorService executor
+            ExecutorService executor,
+            MockSourceBehaviorProperties behaviorProperties,
+            MockSourceBehaviorApplier behaviorApplier
     ) {
         this.objectMapper = objectMapper;
         this.executor = executor;
+        this.behaviorProperties = behaviorProperties;
+        this.behaviorApplier = behaviorApplier;
     }
 
     @Override
@@ -38,6 +45,19 @@ public class InternalFlightSource implements OptionSource {
         return CompletableFuture.supplyAsync(() -> {
 
             long start = System.currentTimeMillis();
+            MockSourceBehaviorProperties.Behavior behavior =
+                    behaviorProperties.getInternalFlights();
+            behaviorApplier.applyLatency(source(), behavior);
+
+            SourceResult injected =
+                    behaviorApplier.maybeInjectResult(
+                            behavior,
+                            source(),
+                            start
+                    );
+            if (injected != null) {
+                return injected;
+            }
 
             try {
                 ClassPathResource resource =

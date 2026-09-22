@@ -1,0 +1,58 @@
+{
+  "properties": [
+    {
+      "name": "mock.sources.internal-flights.latency-ms",
+      "type": "java.lang.Long",
+      "description": "Injected latency for internal flights source in milliseconds.",
+      "defaultValue": 0
+    },
+    {
+      "name": "mock.sources.internal-flights.outcome",
+      "type": "com.wincodes.optionsfinder.config.MockSourceBehaviorProperties$Outcome",
+      "description": "Injected outcome for internal flights source.",
+      "defaultValue": "NORMAL"
+    },
+    {
+      "name": "mock.sources.internal-flights.timeout-delay-ms",
+      "type": "java.lang.Long",
+      "description": "Delay before throwing injected timeout for internal flights source.",
+      "defaultValue": 3000
+    },
+    {
+      "name": "mock.sources.external-flights.latency-ms",
+      "type": "java.lang.Long",
+      "description": "Injected latency for external flights source in milliseconds.",
+      "defaultValue": 0
+    },
+    {
+      "name": "mock.sources.external-flights.outcome",
+      "type": "com.wincodes.optionsfinder.config.MockSourceBehaviorProperties$Outcome",
+      "description": "Injected outcome for external flights source.",
+      "defaultValue": "NORMAL"
+    },
+    {
+      "name": "mock.sources.external-flights.timeout-delay-ms",
+      "type": "java.lang.Long",
+      "description": "Delay before throwing injected timeout for external flights source.",
+      "defaultValue": 3000
+    },
+    {
+      "name": "mock.sources.trains.latency-ms",
+      "type": "java.lang.Long",
+      "description": "Injected latency for trains source in milliseconds.",
+      "defaultValue": 0
+    },
+    {
+      "name": "mock.sources.trains.outcome",
+      "type": "com.wincodes.optionsfinder.config.MockSourceBehaviorProperties$Outcome",
+      "description": "Injected outcome for trains source.",
+      "defaultValue": "NORMAL"
+    },
+    {
+      "name": "mock.sources.trains.timeout-delay-ms",
+      "type": "java.lang.Long",
+      "description": "Delay before throwing injected timeout for trains source.",
+      "defaultValue": 3000
+    }
+  ]
+}

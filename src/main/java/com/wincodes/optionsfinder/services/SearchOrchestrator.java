@@ -2,6 +2,8 @@ package com.wincodes.optionsfinder.services;
 
 import com.wincodes.optionsfinder.models.*;
 import com.wincodes.optionsfinder.sources.OptionSource;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.time.Duration;
@@ -10,6 +12,9 @@ import java.util.concurrent.CompletableFuture;
 
 @Service
 public class SearchOrchestrator {
+
+    private static final Logger log =
+            LoggerFactory.getLogger(SearchOrchestrator.class);
 
     private static final Duration SOURCE_TIMEOUT =
             Duration.ofSeconds(2);
@@ -57,12 +62,27 @@ public class SearchOrchestrator {
                             instanceof java.util.concurrent.TimeoutException
                             || exception
                             instanceof java.util.concurrent.TimeoutException) {
+                        log.warn(
+                                "Source timeout: source={}, origin={}, destination={}",
+                                source.source(),
+                                request.origin(),
+                                request.destination()
+                        );
 
                         return SourceResult.timeout(
                                 source.source(),
                                 duration
                         );
                     }
+
+                    log.warn(
+                            "Source failure: source={}, origin={}, destination={}, durationMs={}, error={}",
+                            source.source(),
+                            request.origin(),
+                            request.destination(),
+                            duration,
+                            exception.getMessage()
+                    );
 
                     return SourceResult.failure(
                             source.source(),

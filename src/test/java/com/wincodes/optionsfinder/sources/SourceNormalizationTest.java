@@ -1,5 +1,6 @@
 package com.wincodes.optionsfinder.sources;
 
+import com.wincodes.optionsfinder.config.MockSourceBehaviorProperties;
 import com.wincodes.optionsfinder.models.SearchRequest;
 import com.wincodes.optionsfinder.models.SourceResult;
 import com.wincodes.optionsfinder.models.SourceStatus;
@@ -24,12 +25,16 @@ class SourceNormalizationTest {
     private ExecutorService executor;
     private ObjectMapper objectMapper;
     private AirportTimeZoneRegistry airportTimeZoneRegistry;
+    private MockSourceBehaviorProperties behaviorProperties;
+    private MockSourceBehaviorApplier behaviorApplier;
 
     @BeforeEach
     void setUp() {
         executor = Executors.newFixedThreadPool(3);
         objectMapper = new ObjectMapper();
         airportTimeZoneRegistry = new AirportTimeZoneRegistry();
+        behaviorProperties = new MockSourceBehaviorProperties();
+        behaviorApplier = new MockSourceBehaviorApplier();
     }
 
     @AfterEach
@@ -39,7 +44,12 @@ class SourceNormalizationTest {
 
     @Test
     void internalSourceNormalizesOffersToTravelOption() {
-        InternalFlightSource source = new InternalFlightSource(objectMapper, executor);
+        InternalFlightSource source = new InternalFlightSource(
+                objectMapper,
+                executor,
+                behaviorProperties,
+                behaviorApplier
+        );
         SearchRequest request = new SearchRequest("CGN", "BER", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
 
         SourceResult result = source.search(request).join();
@@ -59,7 +69,9 @@ class SourceNormalizationTest {
         ExternalFlightSource source = new ExternalFlightSource(
                 objectMapper,
                 executor,
-                airportTimeZoneRegistry
+                airportTimeZoneRegistry,
+                behaviorProperties,
+                behaviorApplier
         );
         SearchRequest request = new SearchRequest("CGN", "BER", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
 
@@ -89,7 +101,9 @@ class SourceNormalizationTest {
         TrainSource source = new TrainSource(
                 objectMapper,
                 executor,
-                airportTimeZoneRegistry
+                airportTimeZoneRegistry,
+                behaviorProperties,
+                behaviorApplier
         );
         SearchRequest request = new SearchRequest("CGN", "BER", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
 

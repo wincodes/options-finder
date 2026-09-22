@@ -1,5 +1,6 @@
 package com.wincodes.optionsfinder.sources;
 
+import com.wincodes.optionsfinder.config.MockSourceBehaviorProperties;
 import com.wincodes.optionsfinder.dtos.train.TrainResponse;
 import com.wincodes.optionsfinder.models.*;
 import com.wincodes.optionsfinder.services.AirportTimeZoneRegistry;
@@ -25,15 +26,21 @@ public class TrainSource implements OptionSource {
     private final ObjectMapper objectMapper;
     private final ExecutorService executor;
     private final AirportTimeZoneRegistry airportTimeZoneRegistry;
+    private final MockSourceBehaviorProperties behaviorProperties;
+    private final MockSourceBehaviorApplier behaviorApplier;
 
     public TrainSource(
             ObjectMapper objectMapper,
             ExecutorService executor,
-            AirportTimeZoneRegistry airportTimeZoneRegistry
+            AirportTimeZoneRegistry airportTimeZoneRegistry,
+            MockSourceBehaviorProperties behaviorProperties,
+            MockSourceBehaviorApplier behaviorApplier
     ) {
         this.objectMapper = objectMapper;
         this.executor = executor;
         this.airportTimeZoneRegistry = airportTimeZoneRegistry;
+        this.behaviorProperties = behaviorProperties;
+        this.behaviorApplier = behaviorApplier;
     }
 
     @Override
@@ -49,6 +56,19 @@ public class TrainSource implements OptionSource {
         return CompletableFuture.supplyAsync(() -> {
 
             long start = System.currentTimeMillis();
+            MockSourceBehaviorProperties.Behavior behavior =
+                    behaviorProperties.getTrains();
+            behaviorApplier.applyLatency(source(), behavior);
+
+            SourceResult injected =
+                    behaviorApplier.maybeInjectResult(
+                            behavior,
+                            source(),
+                            start
+                    );
+            if (injected != null) {
+                return injected;
+            }
 
             try {
 

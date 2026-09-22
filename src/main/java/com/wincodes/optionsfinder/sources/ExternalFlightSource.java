@@ -2,6 +2,7 @@ package com.wincodes.optionsfinder.sources;
 
 import com.wincodes.optionsfinder.dtos.external.ExternalFlightResponse;
 import com.wincodes.optionsfinder.models.*;
+import com.wincodes.optionsfinder.services.AirportTimeZoneRegistry;
 import tools.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -10,7 +11,6 @@ import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -24,13 +24,16 @@ public class ExternalFlightSource implements OptionSource {
 
     private final ObjectMapper objectMapper;
     private final ExecutorService executor;
+    private final AirportTimeZoneRegistry airportTimeZoneRegistry;
 
     public ExternalFlightSource(
             ObjectMapper objectMapper,
-            ExecutorService executor
+            ExecutorService executor,
+            AirportTimeZoneRegistry airportTimeZoneRegistry
     ) {
         this.objectMapper = objectMapper;
         this.executor = executor;
+        this.airportTimeZoneRegistry = airportTimeZoneRegistry;
     }
 
     @Override
@@ -99,10 +102,16 @@ public class ExternalFlightSource implements OptionSource {
     ) {
 
         OffsetDateTime departure =
-                parseDate(offer.departureTime());
+                parseDate(
+                        offer.departureTime(),
+                        offer.departureAirport()
+                );
 
         OffsetDateTime arrival =
-                parseDate(offer.arrivalTime());
+                parseDate(
+                        offer.arrivalTime(),
+                        offer.arrivalAirport()
+                );
 
         List<TravelOption.Leg> legs =
                 offer.legs()
@@ -135,11 +144,19 @@ public class ExternalFlightSource implements OptionSource {
         );
     }
 
-    private OffsetDateTime parseDate(String value) {
+    private OffsetDateTime parseDate(
+            String value,
+            String airportCode
+    ) {
 
         LocalDateTime dateTime =
                 LocalDateTime.parse(value, FORMATTER);
 
-        return dateTime.atOffset(ZoneOffset.ofHours(2));
+        return dateTime.atZone(
+                        airportTimeZoneRegistry.zoneForAirport(
+                                airportCode
+                        )
+                )
+                .toOffsetDateTime();
     }
 }

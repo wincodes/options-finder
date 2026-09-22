@@ -32,7 +32,8 @@ public class RecommendationRanker {
                 .sorted(
                         Comparator
                                 .comparing(
-                                        TravelOption::arrival
+                                        (TravelOption option) -> option.arrival()
+                                                .toInstant()
                                 )
                                 .thenComparing(
                                         TravelOption::availableSeats,

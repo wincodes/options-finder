@@ -4,6 +4,7 @@ import com.wincodes.optionsfinder.models.SearchRequest;
 import com.wincodes.optionsfinder.models.SourceResult;
 import com.wincodes.optionsfinder.models.SourceStatus;
 import com.wincodes.optionsfinder.models.TravelOption;
+import com.wincodes.optionsfinder.services.AirportTimeZoneRegistry;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,11 +23,13 @@ class SourceNormalizationTest {
 
     private ExecutorService executor;
     private ObjectMapper objectMapper;
+    private AirportTimeZoneRegistry airportTimeZoneRegistry;
 
     @BeforeEach
     void setUp() {
         executor = Executors.newFixedThreadPool(3);
         objectMapper = new ObjectMapper();
+        airportTimeZoneRegistry = new AirportTimeZoneRegistry();
     }
 
     @AfterEach
@@ -53,7 +56,11 @@ class SourceNormalizationTest {
 
     @Test
     void externalSourceParsesCustomDateAndPriceFormat() {
-        ExternalFlightSource source = new ExternalFlightSource(objectMapper, executor);
+        ExternalFlightSource source = new ExternalFlightSource(
+                objectMapper,
+                executor,
+                airportTimeZoneRegistry
+        );
         SearchRequest request = new SearchRequest("CGN", "BER", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
 
         SourceResult result = source.search(request).join();
@@ -67,11 +74,23 @@ class SourceNormalizationTest {
         assertEquals(ZoneOffset.ofHours(2), ext1.arrival().getOffset());
         assertEquals(new BigDecimal("189"), ext1.price().amount());
         assertEquals("EUR", ext1.price().currency());
+
+        SearchRequest dxbRequest = new SearchRequest("CGN", "DXB", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
+        SourceResult dxbResult = source.search(dxbRequest).join();
+        TravelOption ext4 = dxbResult.options().stream()
+                .filter(option -> "EXT-4".equals(option.id()))
+                .findFirst()
+                .orElseThrow();
+        assertEquals(ZoneOffset.ofHours(4), ext4.arrival().getOffset());
     }
 
     @Test
     void trainSourceParsesPriceAndSingleLegConnection() {
-        TrainSource source = new TrainSource(objectMapper, executor);
+        TrainSource source = new TrainSource(
+                objectMapper,
+                executor,
+                airportTimeZoneRegistry
+        );
         SearchRequest request = new SearchRequest("CGN", "BER", OffsetDateTime.parse("2026-07-21T18:35:00+02:00"));
 
         SourceResult result = source.search(request).join();

@@ -2,6 +2,7 @@ package com.wincodes.optionsfinder.sources;
 
 import com.wincodes.optionsfinder.dtos.train.TrainResponse;
 import com.wincodes.optionsfinder.models.*;
+import com.wincodes.optionsfinder.services.AirportTimeZoneRegistry;
 import tools.jackson.databind.ObjectMapper;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -10,7 +11,6 @@ import java.io.InputStream;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.OffsetDateTime;
-import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -24,13 +24,16 @@ public class TrainSource implements OptionSource {
 
     private final ObjectMapper objectMapper;
     private final ExecutorService executor;
+    private final AirportTimeZoneRegistry airportTimeZoneRegistry;
 
     public TrainSource(
             ObjectMapper objectMapper,
-            ExecutorService executor
+            ExecutorService executor,
+            AirportTimeZoneRegistry airportTimeZoneRegistry
     ) {
         this.objectMapper = objectMapper;
         this.executor = executor;
+        this.airportTimeZoneRegistry = airportTimeZoneRegistry;
     }
 
     @Override
@@ -102,10 +105,16 @@ public class TrainSource implements OptionSource {
     ) {
 
         OffsetDateTime departure =
-                parseDate(connection.departure());
+                parseDate(
+                        connection.departure(),
+                        request.origin()
+                );
 
         OffsetDateTime arrival =
-                parseDate(connection.arrival());
+                parseDate(
+                        connection.arrival(),
+                        request.destination()
+                );
 
         TravelOption.Leg leg =
                 new TravelOption.Leg(
@@ -131,11 +140,19 @@ public class TrainSource implements OptionSource {
         );
     }
 
-    private OffsetDateTime parseDate(String value) {
+    private OffsetDateTime parseDate(
+            String value,
+            String airportCode
+    ) {
 
         return LocalDateTime
                 .parse(value, FORMATTER)
-                .atOffset(ZoneOffset.ofHours(2));
+                .atZone(
+                        airportTimeZoneRegistry.zoneForAirport(
+                                airportCode
+                        )
+                )
+                .toOffsetDateTime();
     }
 
     private TravelOption.Money parsePrice(String value) {

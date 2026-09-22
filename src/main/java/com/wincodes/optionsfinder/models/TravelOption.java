@@ -15,8 +15,7 @@ public record TravelOption(
         int availableSeats,
         Money price,
         List<Leg> legs,
-        String note,
-        boolean requiresGroundTransfer
+        String note
 ) {
 
     public record Money(

@@ -127,8 +127,7 @@ public class TrainSource implements OptionSource {
                 connection.availableSeats(),
                 parsePrice(connection.price()),
                 List.of(leg),
-                note,
-                false
+                note
         );
     }
 

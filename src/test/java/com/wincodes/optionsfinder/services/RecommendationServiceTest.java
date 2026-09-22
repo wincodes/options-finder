@@ -174,8 +174,7 @@ class RecommendationServiceTest {
                 seats,
                 new TravelOption.Money(BigDecimal.valueOf(100), "EUR"),
                 List.of(),
-                null,
-                false
+                null
         );
     }
 

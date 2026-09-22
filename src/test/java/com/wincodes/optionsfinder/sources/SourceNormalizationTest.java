@@ -49,7 +49,6 @@ class SourceNormalizationTest {
         assertEquals("Lufthansa", int1.provider());
         assertEquals(2, int1.legs().size());
         assertEquals(new BigDecimal("214.0"), int1.price().amount());
-        assertFalse(int1.requiresGroundTransfer());
     }
 
     @Test

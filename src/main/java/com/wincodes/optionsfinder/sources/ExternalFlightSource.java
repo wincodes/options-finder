@@ -131,9 +131,7 @@ public class ExternalFlightSource implements OptionSource {
                         offer.currency()
                 ),
                 legs,
-                offer.note(),
-                !offer.departureAirport()
-                        .equalsIgnoreCase(request.origin())
+                offer.note()
         );
     }
 

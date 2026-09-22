@@ -117,9 +117,7 @@ public class InternalFlightSource implements OptionSource {
                         offer.pricePerSeat().currency()
                 ),
                 legs,
-                null,
-                !offer.departureAirport()
-                        .equalsIgnoreCase(request.origin())
+                null
         );
     }
 }
